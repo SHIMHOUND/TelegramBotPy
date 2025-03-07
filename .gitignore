@@ -1,0 +1,26 @@
+.env
+config.py
+# Директории и файлы, которые могут быть созданы автоматически
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+DictBad/bad_words.py
+
+# Виртуальное окружение
+venv/
+env/
+.venv/
+ENV/
+
+# Файлы конфигураций IDE
+.vscode/
+.idea/
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Другие файлы, которые не нужно коммитить
+*.log
+*.sqlite3
