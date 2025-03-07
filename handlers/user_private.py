@@ -33,3 +33,6 @@ async def payment(message: types.Message):
 @user_private_router.message(Command('shipping'))
 async def shipping(message: types.Message):
     await message.answer("Shipping methods: ")
+
+
+
