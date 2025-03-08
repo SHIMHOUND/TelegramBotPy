@@ -2,11 +2,13 @@ from string import punctuation
 
 from aiogram import F, types, Router
 from aiogram.filters import CommandStart, Command, or_f
+
 from DictBad.bad_words import bad_words
 from filters.chat_types import ChatTypeFilter
 
 user_group_router = Router()
 user_group_router.message.filter(ChatTypeFilter(['group', 'supergroup']))
+user_group_router.edited_message.filter(ChatTypeFilter(['supergroup', 'group']))
 
 restricted_words = set(bad_words)
 
